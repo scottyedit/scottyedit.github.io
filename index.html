@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8"><!-- Google tag (gtag.js) --><script async src="https://www.googletagmanager.com/gtag/js?id=G-6NFWS49C5M"></script><script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-6NFWS49C5M');
+</script><meta content="no-store, no-cache, must-revalidate" http-equiv="Cache-Control"/><meta content="no-cache" http-equiv="Pragma"/><meta content="0" http-equiv="Expires"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+	<link href="https://scottyrouse.com/" rel="canonical" />
+	<title>Scotty Rouse | Video Editor &amp; Producer</title>
+	<link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@200;300;500;600&amp;display=swap" rel="stylesheet" />
+	<style type="text/css">body {
+      margin: 0;
+      font-family: 'Readex Pro', sans-serif;
+      font-weight: 300;
+      background: #111;
+      color: #fff;
+    }
+    header {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 1rem 12rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    header img {
+      height: 50px;
+      animation: fadeInLogo 2s ease 1s forwards;
+      opacity: 0;
+    }
+    .nav-links a {
+      margin-left: 1rem;
+      font-size: 1rem;
+      font-weight: 200;
+      color: white;
+      text-decoration: none;
+      text-transform: uppercase;
+      transition: color 0.3s ease;
+    }
+    .nav-links a:hover {
+      color: #0c7b2e;
+    }
+    .intropic-section {
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      padding-top: 6rem;
+      text-align: center;
+      padding: 4rem 2rem;
+      background-image: url('intropic-bg.jpg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
+    .intropic-section::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0, 0, 0, 0.3);
+      backdrop-filter: blur(var(--blur-amount, 0px));
+      z-index: 0;
+    }
+    .intropic-section h1,
+    .intropic-section h2 {
+      opacity: 0;
+      position: relative;
+      z-index: 1;
+      animation-fill-mode: forwards;
+    }
+    .intropic-section h1 {
+      font-size: 5.88rem;
+      font-weight: 300;
+      color: white;
+      animation: fadeInText 1.5s ease 3s forwards;
+    }
+    .intropic-section h2 {
+      font-size: 1.125rem;
+      font-weight: 400;
+      text-transform: uppercase;
+      letter-spacing: 0.5382rem;
+      max-width: 80%;
+      color: #31aa07;
+      animation: fadeInText 1.5s ease 4s forwards;
+      margin: 1rem auto 0 auto;
+    }
+    .bio-section {
+      padding: 2rem 12rem;
+      background: #111;
+    }
+    .intro {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      margin-bottom: 2rem;
+    }
+    .intro img {
+      border-radius: 8px;
+      max-width: 200px;
+      margin-right: 2rem;
+    }
+    .intro-text {
+      flex: 1;
+      min-width: 250px;
+    }
+    .bio-section h1 {
+      color: #0c7b2e;
+      font-weight: 500;
+    }
+    .button {
+      background-color: #0c7b2e;
+      color: white;
+      padding: 0.75rem 1.25rem;
+      text-decoration: none;
+      border-radius: 5px;
+      display: inline-block;
+      transition: all 0.3s ease;
+    }
+    .button:hover {
+      transform: scale(1.1);
+      background-color: white;
+      color: #0c7b2e;
+    }
+    .video-section {
+      padding: 2rem 12rem;
+      background: #000;
+    }
+    .video-section h2 {
+      color: #0c7b2e;
+      font-weight: 500;
+    }
+    .video-gallery {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.5rem;
+    }
+    .video-wrapper {
+      filter: grayscale(75%);
+      transition: filter 0.3s ease;
+    }
+    .video-wrapper:hover,
+    .video-wrapper.active {
+      filter: none;
+    }
+    .video-wrapper iframe {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      border: none;
+    }
+    footer {
+      background-color: #fff;
+      color: #000;
+      text-align: center;
+      padding: 2rem 1rem;
+      font-family: 'Readex Pro', sans-serif;
+      font-weight: 200;
+    }
+    .social-icons {
+      margin: 1rem 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-top: 6rem;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+    }
+    .social-icons a {
+      text-decoration: none;
+      color: #000;
+      text-align: center;
+      font-size: 0.8rem;
+      font-weight: 300;
+      transition: transform 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .social-icons a span {
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      margin-top: 0.25rem;
+    }
+    .social-icons a:hover {
+      transform: scale(1.1);
+    }
+    .social-icons a:hover img {
+      filter: brightness(0) saturate(100%) invert(27%) sepia(92%) saturate(631%) hue-rotate(88deg) brightness(93%) contrast(101%);
+    }
+    .social-icons a:hover span {
+      opacity: 1;
+    }
+    .social-icons img {
+      width: 24px;
+      height: 24px;
+      vertical-align: middle;
+    }
+
+    @keyframes fadeInLogo {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes fadeInText {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+  @media (max-width: 768px) {
+  header {
+    padding: 1rem 2rem;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    margin-top: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .intropic-section h1 {
+    font-size: 3rem;
+  }
+
+  .intropic-section h2 {
+    font-size: 0.9rem;
+    letter-spacing: 0.3rem;
+  }
+
+  .bio-section,
+  .video-section {
+    padding: 2rem;
+  }
+
+  .intro {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .intro img {
+    margin: 0 0 1rem 0;
+  }
+
+  .video-gallery {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .social-icons {
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .social-icons img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .social-icons a {
+    font-size: 0.7rem;
+  }
+}
+	</style>
+	<script>
+    window.addEventListener('scroll', () => {
+      const blur = Math.min(window.scrollY / 100, 5);
+      document.documentElement.style.setProperty('--blur-amount', `${blur}px`);
+    });
+
+    document.addEventListener('DOMContentLoaded', () => {
+      document.querySelectorAll('.video-wrapper').forEach(wrapper => {
+        wrapper.addEventListener('click', () => {
+          document.querySelectorAll('.video-wrapper').forEach(w => w.classList.remove('active'));
+          wrapper.classList.add('active');
+        });
+      });
+    });
+  </script><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Scotty Rouse",
+  "givenName": "Scott",
+  "additionalName": "Scotty",
+  "familyName": "Rouse",
+  "gender": "Male",
+  "birthDate": "1987",
+  "nationality": {
+    "@type": "Country",
+    "name": "Australia"
+  },
+  "hasOccupation": {
+    "@type": "Occupation",
+    "name": "Video Editor & Television Producer",
+    "description": "Scotty Rouse is an award-winning offline video editor and producer with over 18 years of experience in television, including entertainment, reality, documentary, and live formats.",
+    "occupationLocation": {
+      "@type": "Place",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Sydney",
+        "addressCountry": "Australia"
+      }
+    }
+  },
+  "url": "https://scottyrouse.com",
+  "image": "https://scottyrouse.com/Scotty.jpg",
+  "sameAs": [
+    "https://www.imdb.com/name/nm11635962/",
+    "https://www.instagram.com/scottyosophy/",
+    "https://www.youtube.com/@scottyrouse648/videos",
+    "https://vimeo.com/scottyrouse",
+    "https://x.com/scotty_rouse"
+  ],
+  "knowsAbout": [
+    "Video editing",
+    "Avid Media Composer",
+    "Broadcast television production",
+    "Post-production workflows",
+    "Storytelling",
+    "Narrative editing",
+    "Film editing",
+    "Television",
+    "TV",
+    "TV production",
+    "TV editing",
+    "Reality TV"
+  ],
+  "award": [
+    {
+      "@type": "CreativeWork",
+      "name": "The Voice (Seven Network)",
+      "award": "Logie Award for Best Entertainment Program, 2024",
+      "roleName": "Offline Video Editor",
+      "description": "Part of the post-production team for the awarded season."
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "I'm a Celebrity...Get Me Out of Here! Australia (Network Ten)",
+      "award": "Logie Award for Most Outstanding Reality Program, 2022",
+      "roleName": "Offline Video Editor",
+      "description": "Part of the post-production team for the awarded season."
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "2018 FIFA World Cup (SBS Television)",
+      "award": "Logie Award for Most Outstanding Sports Coverage, 2019",
+      "roleName": "Offline Video Editor",
+      "description": "Part of the post-production team for the awarded season."
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "2014 FIFA World Cup (SBS One Television)",
+      "award": "Logie Award for Most Outstanding Sports Coverage, 2015",
+      "roleName": "Offline Video Editor",
+      "description": "Part of the post-production team for the awarded season."
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Nine Network Crew Awards",
+      "award": "Best News Editing, 2008",
+      "roleName": "Offline Video Editor",
+      "description": "Recipient of internal staff award for editorial excellence at Nine Network."
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<header><img alt="Scotty Rouse Logo" src="SRLOGO_Nameplate.png" />
+<nav class="nav-links"><a href="#about">ABOUT</a> <a href="#videos">VIDEOS</a> <a href="mailto:scottyedit+inquiry@gmail.com">EMAIL</a></nav>
+</header>
+
+<section class="intropic-section">
+<h1>Scotty Rouse</h1>
+
+<h2>Professional Video Editor and<br />
+PRODUCER FOR TELEVISION</h2>
+</section>
+
+<section class="bio-section" id="about">
+<div class="intro"><img alt="Scotty Rouse – professional video editor and TV producer in Sydney, Australia" src="Scotty.jpg" />
+<div class="intro-text">
+<h1>Editing is the magic of television</h1>
+
+<p>Scotty is an offline video editor and producer based in Sydney, Australia, with over 18 years&rsquo; experience in the television industry.</p>
+
+<p>Specialising in Entertainment, Reality, Documentary and Live short-turnaround productions, Scotty has worked on some of the biggest TV franchises and major sporting events in the world with a number of broadcasters and production companies.</p>
+</div>
+</div>
+
+<div style="text-align: center; margin-top: 1rem;"><a class="button" href="resume.pdf" target="_blank">Download Broadcast CV</a></div>
+</section>
+
+<section class="video-section" id="videos">
+<h2>Video Portfolio</h2>
+
+<div class="video-gallery">
+<div class="video-wrapper"><iframe allowfullscreen="" src="https://www.youtube.com/embed/bQn2E4a4Uyg"></iframe></div>
+
+<div class="video-wrapper"><iframe allowfullscreen="" src="https://www.youtube.com/embed/oWxLDkfOYUc"></iframe></div>
+
+<div class="video-wrapper"><iframe allowfullscreen="" src="https://www.youtube.com/embed/RCEsA9BHzwU"></iframe></div>
+
+<div class="video-wrapper"><iframe allowfullscreen="" src="https://www.youtube.com/embed/7iKV-54DL7w"></iframe></div>
+
+<div class="video-wrapper"><iframe allowfullscreen="" src="https://www.youtube.com/embed/wBXCI-hRvug"></iframe></div>
+
+<div class="video-wrapper"><iframe allowfullscreen="" src="https://www.youtube.com/embed/LXKZxDVPDFA"></iframe></div>
+
+<div class="video-wrapper"><iframe allowfullscreen="" src="https://www.youtube.com/embed/Mnl-EerYWQQ"></iframe></div>
+
+<div class="video-wrapper"><iframe allowfullscreen="" src="https://www.youtube.com/embed/SJV7ExxKa6U"></iframe></div>
+
+<div class="video-wrapper"><iframe allowfullscreen="" src="https://www.youtube.com/embed/84kqG8Wb3WA"></iframe></div>
+
+<div class="video-wrapper"><iframe allowfullscreen="" src="https://www.youtube.com/embed/MMJArMW2wB4"></iframe></div>
+
+<div class="video-wrapper"><iframe allowfullscreen="" src="https://www.youtube.com/embed/SloUhbry224"></iframe></div>
+
+<div class="video-wrapper"><iframe allowfullscreen="" src="https://www.youtube.com/embed/hzG3n3Jor04"></iframe></div>
+</div>
+</section>
+
+<footer>
+<div class="social-icons"><a href="https://www.imdb.com/name/nm11635962/" target="_blank"><img alt="IMDb" src="https://cdn-icons-png.flaticon.com/512/5968/5968558.png" /> <span>IMDB</span> </a> <a href="https://www.instagram.com/scottyosophy/" target="_blank"> <img alt="Instagram" src="https://cdn-icons-png.flaticon.com/512/1532/1532461.png" /> <span>Insta</span> </a> <a href="https://www.youtube.com/@scottyrouse.videoeditor" target="_blank"> <img alt="YouTube" src="https://cdn-icons-png.flaticon.com/512/1532/1532462.png" /> <span>YouTube</span> </a> <a href="https://vimeo.com/scottyrouse" target="_blank"> <img alt="Vimeo" src="https://cdn-icons-png.flaticon.com/512/1532/1532426.png" /> <span>Vimeo</span> </a> <a href="https://x.com/scotty_rouse" target="_blank"> <img alt="X" src="https://cdn-icons-png.flaticon.com/512/1532/1532424.png" /> <span>Twitter</span> </a> <a href="mailto:scottyedit+inquiry@gmail.com"> <img alt="Email" src="https://cdn-icons-png.flaticon.com/512/481/481659.png" /> <span>Email</span> </a></div>
+
+<div>Copyright &copy; 2026 Scotty Rouse</div>
+</footer>
+</body>
+</html>
